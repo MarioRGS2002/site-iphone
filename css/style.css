@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Funnel Sans", sans-serif;
+}
+:root {
+    --cor-01: #06c;
+    --cor-02: #000;
+    --cor-03: #ccc;
+    --cor-04: #fff
+}
+#cabecalho {
+    background-color: var(--cor-02);
+}
+#cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #logo {
+    width: 30px;
+}
+#menu .submenu {
+    background-color: var(--cor-02);
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+}
+#menu ul li a{
+    text-decoration: none;
+    color: var(--cor-04);
+    display: block;
+    padding: 20px 30px;
+    transition: all 0.3s linear;
+
+
+}
+#menu ul {
+    display: flex;
+    list-style: none;
+}
+#menu ul li a:hover {
+    background-color: var(--cor-01);
+
+}
+#menu ul li:hover .submenu {
+    display: block;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.titulo {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#historia img {
+    float: left;
+    width: 350px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+#historia p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+#rodape {
+    background-color: #000;
+    text-align: center;
+    color: aliceblue;
+    padding: 20px 0;
+    font-size: 13px;
+}
+a { 
+    color: antiquewhite;
+}
+a:hover
+{
+    color:var(--cor-01);
+}
+
+#fotos #galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+                
+}
+#fotos #galeria img {
+    width: 100%;
+    display: block;
+    transition: all 0.3s linear;
+    
+
+}
+#fotos #galeria img:hover {
+    transform: scale(1.1);
+
+}
+#videos #galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.videos{
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+}
+
